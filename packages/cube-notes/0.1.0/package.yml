@@ -1,9 +1,12 @@
 matches:
-- trigger: ":espanso"
+  - trigger: ":espanso"
     replace: "Hi there!"
 
   - trigger: ":cu"
     replace: "Cube Online"
+
+  - trigger: ":didthiswork"
+    replace: "yes it did!"
 
   - trigger: ":rs"
     replace: "Response automations setup"
@@ -19,12 +22,6 @@ matches:
 
   - trigger: ":vm"
     replace: "TYPE OF CALL: Outbound \nWHO WITH: N/A \nTONE: N/A \nQUERY:N/A \nNOTES:N/A \nOUTCOME: Voicemail Left "
-
-  - trigger: ":in"
-    replace: "TYPE OF CALL: Inbound \nWHO WITH: N/A \nTONE: Friendly \nQUERY:N/A \nNOTES:N/A \nOUTCOME: Sorted "
-
-  - trigger: ":out"
-    replace: "TYPE OF CALL: Outbound \nWHO WITH: N/A \nTONE: Friendly \nQUERY:N/A \nNOTES:N/A \nOUTCOME: Sorted "
 
   - trigger: ":zap"
     replace: "TYPE OF CALL: Automations \nCRM:  \nTESTED:  \nWHO WITH:  \nNOTES: "
@@ -59,22 +56,3 @@ matches:
   - trigger: ":pre"
     replace: "\nLogins - Reviews/Engine Sent: Yes/No\nCan login: Yes/No\nBookmarked: Yes/No\nCan Access to GMB: Yes/No\nGMB verified: Yes/No\nGMB Access Provided: Yes/No\nNumber of People in Training: ( )\nWill Be in front of PC\nPlease Install Microsoft Teams on your PC/Zoom in Mac - prior to the meeting\nConfirmed OB date/time: Yes/No\n(For Managed GMB services) - Set up Review Responses: Yes/No\nBusiness Contact 1\nName:\nEmail address:\nContact Number:\nRole/Position:\nWhat does this contact manage:\nPreferred Time of Contact:"
 
-
-
-  # Dates
-  - trigger: ":date"
-    replace: "{{mydate}}"
-    vars:
-      - name: mydate
-        type: date
-        params:
-          format: "%m/%d/%Y"
-
-  # Shell commands
-  - trigger: ":shell"
-    replace: "{{output}}"
-    vars:
-      - name: output
-        type: shell
-        params:
-          cmd: "echo Hello from your shell"
