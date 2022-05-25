@@ -20,7 +20,6 @@ matches:
   - trigger: ":vm"
     replace: "TYPE OF CALL: Outbound \nWHO WITH: N/A \nTONE: N/A \nQUERY:N/A \nNOTES:N/A \nOUTCOME: Voicemail Left "
 
-
   - trigger: ":in"
     replace: "TYPE OF CALL: Inbound \nWHO WITH: N/A \nTONE: Friendly \nQUERY:N/A \nNOTES:N/A \nOUTCOME: Sorted "
 
